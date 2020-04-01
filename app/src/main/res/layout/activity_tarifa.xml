@@ -20,7 +20,8 @@
         app:layout_constraintStart_toStartOf="@+id/listViewTarifas"
         app:layout_constraintTop_toTopOf="@+id/listViewTarifas"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/btn_plus" />
+        app:srcCompat="@android:drawable/btn_plus"
+        android:focusable="true" />
 
     <TextView
         android:id="@+id/textView2"

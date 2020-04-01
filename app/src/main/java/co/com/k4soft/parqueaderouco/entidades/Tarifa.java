@@ -1,20 +1,24 @@
 package co.com.k4soft.parqueaderouco.entidades;
 
-
-import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import co.com.k4soft.parqueaderouco.persistencia.Tabla;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
+//@Entity(tableName = Tabla.TARIFA)
 @Data
-@Entity(tableName = Tabla.TARIFA)
-@NoArgsConstructor
+@AllArgsConstructor
 public class Tarifa {
 
+    private int imagen;
+    private String nombreTarifa;
+    private double precioTarifa;
+
+/*
     @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name = "idTarifa")
@@ -23,5 +27,8 @@ public class Tarifa {
     private String nombre;
     @ColumnInfo(name = "precio")
     private double precio;
+
+ */
+
 
 }
